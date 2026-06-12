@@ -28,8 +28,6 @@ print("Ingrese valores de x (escriba -1 para terminar):\n")
 # Cuando el usuario escribe -1, seguir pasa a False
 # y el while no vuelve a repetirse.
 while seguir == True:
-
-
         # ── INGRESO Y VALIDACIÓN ────────────────────────────────
     # Si el usuario escribe texto, float() falla.
     # El try/except lo atrapa y usa error = True para
@@ -39,8 +37,6 @@ while seguir == True:
         x = float(input("  x = "))
     except ValueError:
         error = True
-
-
         # ── DECISIÓN SEGÚN EL VALOR INGRESADO ───────────────────
     # Tres casos posibles, evaluados en orden:
     #   1) hubo error de conversión → avisar
@@ -48,22 +44,14 @@ while seguir == True:
     #   3) es un número válido      → clasificar
     if error:
         print("  ⚠ Valor inválido. Ingrese un número real.\n")
-
-
     elif x == -1:
         seguir = False   # el while no volverá a repetirse
-
-
     elif (0 < x < 1) or (2 < x < 3):
         print(f"  ✔ {x} ∈ A\n")
         en_A.append(x)      # guarda el valor en la lista de pertenecientes
-
-
     else:
         print(f"  ✘ {x} ∉ A\n")
         fuera_A.append(x)   # guarda el valor en la lista de no pertenecientes
-
-
 # ════════════════════════════════════════════════════════════
 # RESULTADOS — se ejecutan una sola vez, al salir del while.
 # ════════════════════════════════════════════════════════════
