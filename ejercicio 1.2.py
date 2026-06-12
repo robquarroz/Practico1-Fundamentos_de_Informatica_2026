@@ -18,8 +18,7 @@ fuera_A = []  # valores que NO pertenecen a A
 # y la usamos solo para mostrarle al usuario qué turno es.
 for i in range(1, 8):
 
-
-        # ── INGRESO Y CONVERSIÓN ────────────────────────────────
+ # ── INGRESO Y CONVERSIÓN ────────────────────────────────
     # input() devuelve texto; float() lo convierte a número real.
     entrada = input(f"  Valor {i}/7  →  x = ") #el mensaje entre parentesis es lo que se muestra en pantalla
     x = float(entrada)   # "0.5" → 0.5  |  "3" → 3.0
@@ -35,8 +34,6 @@ for i in range(1, 8):
     else:
         print(f"  ✘ {x} ∉ A\n")
         fuera_A.append(x)  # agrega x al final de la lista fuera_A
-
-
 # ════════════════════════════════════════════════════════════
 # RESULTADOS — se ejecutan una sola vez, al salir del for.
 # ════════════════════════════════════════════════════════════
@@ -44,14 +41,10 @@ print("\n══════════════ RESUMEN ══════�
 print(f"Valores ingresados  : 7")
 print(f"Pertenecen a A      : {len(en_A)}")    # len() cuenta elementos de la lista
 print(f"No pertenecen a A   : {len(fuera_A)}")
-
-
 # ── PROMEDIO TOTAL ───────────────────────────────────────────
 # Unimos ambas listas con + y dividimos entre 7 (siempre hay 7).
 prom_total = sum(en_A + fuera_A) / 7
 print(f"Promedio total      : {prom_total:.4f}")  # :.4f → 4 decimales
-
-
 # ── PROMEDIO DE LOS QUE PERTENECEN A A ──────────────────────
 # "if en_A:" es True solo si la lista tiene al menos un elemento.
 # Evita dividir por cero si ningún valor cayó dentro de A.
