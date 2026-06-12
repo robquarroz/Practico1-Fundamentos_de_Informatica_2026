@@ -44,9 +44,9 @@ while seguir == True:
     #   3) es un número válido      → clasificar
     if error:
         print("  ⚠ Valor inválido. Ingrese un número real.\n")
-    elif x == -1:
+            elif x == -1:
         seguir = False   # el while no volverá a repetirse
-    elif (0 < x < 1) or (2 < x < 3):
+            elif (0 < x < 1) or (2 < x < 3):
         print(f"  ✔ {x} ∈ A\n")
         en_A.append(x)      # guarda el valor en la lista de pertenecientes
     else:
