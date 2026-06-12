@@ -1,7 +1,6 @@
 # ════════════════════════════════════════════════════════════
-# EJERCICIO 1.7 — PROGRAMACIÓN ESTRUCTURADA
-# Igual que la versión anterior pero usando
-# while datos_validos == False  en lugar de  while not datos_validos
+# EJERCICIO 1.7 — 
+
 # ════════════════════════════════════════════════════════════
 
 
